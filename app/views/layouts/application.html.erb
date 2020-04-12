@@ -10,30 +10,42 @@
   </head>
 
   <body>
-    <header class="row">
-      <div class="logo">
-        LOGO
-      </div>
-      <div class="col-4">
-        Cotton Country Jams
-      </div>
-      <div class="col-5" >
-        <%= link_to 'Book Large Kitchen', '#' %>
-        <br/>
-        <%= link_to 'Book Small Kitchen', '#' %>
-        <br/>
-        <%= link_to 'Products', '#' %>
-        <br/>
-        <%= link_to 'About Us', '#' %>
-        <br/>
-        <%= link_to 'Contact Us', '#' %>
-      </div>
-    </header>
+    <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <h1 class="navbar-brand">COTTON COUNTRY JAMS</h1>
 
-    <br class="clear" />
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reserve Large Kitchen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reserve Small Kitchen</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
 
     <%= yield %>
-  
 
   </body>
 </html>
