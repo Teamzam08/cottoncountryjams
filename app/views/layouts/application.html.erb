@@ -1,6 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
+      <link rel="stylesheet" type="text/css" href="application.css">
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet"> 
+      <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+      <link
+          rel="stylesheet"
+          href="prism-atom-dark.css"
+          type="text/css"
+          media="screen"
+        />
+
+      <script type="text/javascript" src="prism.js"></script>
+      <script type="text/javascript" src="prism.ruby.js"></script>
+    
     <title>Cotton Country Jams</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -8,7 +22,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
-
   <body>
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
 
@@ -17,22 +30,22 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
           <li class="nav-item active">
-            <a class="nav-link" href="root_path">Home</a>
+            <a class="nav-link" href="/pages/home">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reserve Large Kitchen</a>
+            <a class="nav-link" href="/pages/blk">Reserve Large Kitchen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Reserve Small Kitchen</a>
+            <a class="nav-link" href="/pages/bsk">Reserve Small Kitchen</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Products</a>
+            <a class="nav-link" href="/pages/products">Products</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="/pages/about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="/pages/contact">Contact Us</a>
           </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
@@ -44,6 +57,10 @@
 
 
     <%= yield %>
-
+      <div class="footer">
+        <h4>
+          © Cotton Country Jams 2020. All rights reserved. Website created by Adryan Hawkins.
+        </h4>
+    </div>  
   </body>
 </html>
